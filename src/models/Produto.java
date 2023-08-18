@@ -1,5 +1,15 @@
 package models;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
+@interface Voltagens {
+    Voltagem[] value();
+}
+
+@Voltagem(tensao = "110")
+@Voltagem(tensao = "220")
 public class Produto {
     private String nome;
     private Double preco;
