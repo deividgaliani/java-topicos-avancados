@@ -17,6 +17,14 @@ public class Produto {
         return preco;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
+
     public void imprime() {
         System.out.println("Nome: " + this.getNome() + ", valor: " + this.getPreco());
     }
